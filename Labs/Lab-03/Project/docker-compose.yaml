@@ -1,0 +1,11 @@
+services:
+  nginx:
+    image: nginx:stable-alpine
+    container_name: nginx
+    restart: unless-stopped
+    ports:
+      - "10.10.10.235:8080:80"
+      - "100.99.8.54:8080:80"
+    volumes:
+      - ./html:/usr/share/nginx/html:ro
+    

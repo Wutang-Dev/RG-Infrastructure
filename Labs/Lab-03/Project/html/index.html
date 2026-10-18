@@ -1,0 +1,83 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RG Infrastructure | Homelab</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+</head>
+<body>
+    <div class="dashboard">
+        <header>
+            <div class="brand">
+                <div class="brand-icon">RG</div>
+                <div>
+                    <h1>RG Infrastructure</h1>
+                    <p>Personal Homelab Dashboard</p>
+                </div>
+            </div>
+            <span class="environment">● PRIVATE NETWORK</span>
+        </header>
+
+        <section class="hero">
+            <span class="eyebrow">INFRASTRUCTURE CONTROL CENTRE</span>
+            <h2>Welcome to the <span>Homelab.</span></h2>
+            <p>Self-hosted services running on Ubuntu Server and Docker.</p>
+            <div class="hero-tags">
+                <span>Ubuntu Server</span>
+                <span>Docker</span>
+                <span>OPNsense</span>
+                <span>Tailscale</span>
+            </div>
+        </section>
+
+        <section class="services">
+            <div class="section-heading">
+                <h2>Services</h2>
+                <span>RG Infrastructure / Docker</span>
+            </div>
+
+            <div class="service-grid">
+                <article class="service-card">
+                    <div class="card-top">
+                        <div class="service-icon">P</div>
+                        <span class="status deployed">DEPLOYED</span>
+                    </div>
+                    <h3>Portainer</h3>
+                    <p>Manage Docker containers, images, networks and volumes.</p>
+                    <a id="portainer-link" href="#" target="_blank" rel="noopener noreferrer">
+                        Open Portainer ↗
+                    </a>
+                </article>
+
+                <article class="service-card">
+                    <div class="card-top">
+                        <div class="service-icon">N</div>
+                        <span class="status deployed">DEPLOYED</span>
+                    </div>
+                    <h3>NGINX</h3>
+                    <p>Web server hosting this internal infrastructure dashboard.</p>
+                    <a href="/" class="service-link">View Dashboard ↗</a>
+                </article>
+
+                <article class="service-card">
+                    <div class="card-top">
+                        <div class="service-icon">U</div>
+                        <span class="status planned">PLANNED</span>
+                    </div>
+                    <h3>Uptime Kuma</h3>
+                    <p>Monitor availability and response times of homelab services.</p>
+                    <span class="coming-soon">Coming soon</span>
+                </article>
+            </div>
+        </section>
+
+        <footer>
+            <span>RG Infrastructure © <span id="year"></span></span>
+            <span>Built for learning. Powered by Docker.</span>
+        </footer>
+    </div>
+</body>
+</html>
