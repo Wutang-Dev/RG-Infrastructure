@@ -1,0 +1,19 @@
+services:
+  uptime-kuma:
+    image: louislam/uptime-kuma:2
+    container_name: uptime-kuma
+    restart: unless-stopped
+
+    ports:
+      - "10.10.10.235:3001:3001"
+      - "100.99.8.54:3001:3001"
+
+    volumes:
+      - uptime_data:/app/data
+
+    environment:
+      - TZ=Europe/London
+      - UMASK=0022
+
+volumes:
+  uptime_data:
