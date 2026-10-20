@@ -372,9 +372,9 @@ I avoided using `--remove-orphans` because Uptime Kuma was an active service tha
 
 ### Screenshots — Orphan Container Troubleshooting
 
-![Docker Compose orphan container troubleshooting part 1](Project/Images/07-troubleshooting-found-orphan-1.png)
+![Docker Compose orphan container troubleshooting part 1](Project/Images/07-troubelshooting-found-orphan-1.png)
 
-![Docker Compose orphan container troubleshooting part 2](Project/Images/07-troubleshooting-found-orphan-2.png)
+![Docker Compose orphan container troubleshooting part 2](Project/Images/07-troubelshooting-found-orphan-2.png)
 
 ---
 
